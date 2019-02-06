@@ -1,3 +1,4 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
 $primary-color: white;
 $menu-color: aqua;
 $header1-color: red;
@@ -21,9 +22,8 @@ body{
         margin: 5px;
         font-family: Brush Script MT;
         font-size: x-large;
-
         a{
-            width: 140px;
+            width: 100px;
             display: inline-block;
             text-align: center;
             transition: 0.3s ease-out all;
