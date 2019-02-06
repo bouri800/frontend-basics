@@ -5,39 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Document</title>
+    <title>Molveno Lake Resort</title>
+
+    <script type="text/javascript">
+        function reserveer()
+          {for (i=0; i < document.reserveren.kamer.length; i++)
+               {if (document.reserveren.kamer[i].checked)
+                   {waarde = document.reserveren.kamer[i].value; }
+          }
+          document.reserveren.gekozen.value = "U heeft gekozen voor een "+waarde + " kamer"; }
+       </script> 
+
 </head>
 <body>
     <div class="content">
-        <nav class="menu">
-            <a href="">home</a>
-            <a href="/about">about</a>
-            <a href="/contact">contact</a>
-            <a href="http://www.cnn.com">Nieuws</a>
-        </nav>
+        <div style="border: 3px solid green; border-radius: 8px;">
+            <div>
+                <nav class="menu">
+                    <a href="">home</a>
+                    <a href="/about">about</a>
+                    <a href="https://www.molveno.it/lang/EN/pagine/dettaglio/info_e_dove,7/contact_us,53.html">contact</a>
+                    <a href="http://www.cnn.com">Nieuws</a>               
+                </nav>
+            </div>
+            <div style="position: absolute;top: 15px; right: 750px;">
+                <img src="company_logo.jpg" alt="Logo" style="width: 100px; height: 50px;">
+            </div>
+        </div>
         <main>
+            <div class="sectie">  
                 <section>
                     <h1>Molveno Lake Resort</h1>
+                    <figure>
+                        <img src="molveno2.jpg" alt="Geen foto">
+                    </figure>
                     <h2>Wilt u een kamer reserver?</h2>
-                    <p>Dit is een paragraaf om te testen. bla bla bla 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo consectetur quae veritatis dignissimos quod error, enim in eum dolore magnam nostrum, sed non fugit nemo, ad delectus nesciunt labore.
+                    <p class="dynamic-color">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo consectetur 
+                        quae veritatis dignissimos quod error, enim in eum dolore magnam nostrum, sed non fugit nemo, 
+                        ad delectus nesciunt labore.
                     </p>
-
-                    <ul>
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                    </ul> 
-                
-            </section>
-            <article>
-                    <h2>Een tafel reserveren?</h2>
-                    <p>WWF's mission is to stop the degradation of our planet's natural environment,
-                and build a future in which humans live in harmony with nature.</p>
-            </article> 
-            <figure>
-                    <img src="u1001.gif" alt="Geen foto">
-            </figure>
+                    
+                            <FORM name="reserveren">
+                                    Maak een keuze uit de volgende type kamers: 
+                                    <BR><INPUT type="radio" name="kamer" value="Budget">Budget
+                                    <BR><INPUT type="radio" name="kamer" value="Standaard" CHECKED>Standaard
+                                    <BR><INPUT type="radio" name="kamer" value="Lux">Lux<BR>
+                                    
+                            </FORM>                       
+                            <FORM name="opties">
+                                    Maak een keuze uit de volgende opties: 
+                                    <BR><INPUT type="radio" name="optie" value="kinderbed">Kinderbed
+                                    <BR><INPUT type="radio" name="optie" value="Ontbijt" CHECKED>Ontbijt
+                                    <BR><INPUT type="radio" name="opties" value="Logies">Logies<BR>
+                            </FORM>
+                            <BR><INPUT type="button" value="Reserveer" onClick="reserveer();"><BR>
+                            <BR><INPUT type="text" name="gekozen" SIZE="50">
+                    <article>
+                            <h2>Een tafel reserveren?</h2>
+                            <p class="dynamic-color">WWF's mission is to stop the degradation of our planet's natural environment,<br>
+                            and build a future in which humans live in harmony with nature.</p>
+                        </article> 
+                </section>
+            </div>     
         </main>
         <footer>
                 <p>Posted by: Hafid Bourich</p>

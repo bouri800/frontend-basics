@@ -1,7 +1,15 @@
+$primary-color: white;
+$menu-color: aqua;
+$header1-color: red;
+$header2-color: darkseagreen;
+$paragraph-color: greenyellow;
+$fotor-color:burlywood;
+$primary-font-color: black;
 body{
     .menu{
+        width: 600px;
         height: 10px;
-        background-color: aqua;
+        background-color: $menu-color;
     }
     .content{
         width: 800px;
@@ -11,37 +19,74 @@ body{
         padding:20px;
         border-radius: 4px;
         margin: 5px;
+        font-family: Brush Script MT;
+        font-size: x-large;
 
         a{
-            width: 100px;
+            width: 140px;
             display: inline-block;
             text-align: center;
             transition: 0.3s ease-out all;
         }
+        a:hover { 
+            background-color: yellow;
+          } 
+        a:focus { 
+            background-color: green;
+          } 
     }
     
     main{
-        background: orange;
+        background: $primary-color;
         h1{
-            background: red;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
+            //background: $header1-color;
+            background:$paragraph-color;
+            font-family: Brush Script MT;
+            font-size: xx-large
+
         }
         h2{
-            background: blue;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: medium;
+            background: $header2-color;
+            font-family: Brush Script MT;
+            font-size: x-large;
         }
         p{
-            background: greenyellow
+            background: $paragraph-color;
+        }
+        img{
+            width:700px;
+            height:300px;
+            border-radius: 8px;
+        }
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+        .sectie{
+            border-radius: 8px;
+            background: lightyellow;
+            border: 3px solid green;
+            //background-image: url(company_logi.jpg);
         }
 
     }
     footer{
-        background: burlywood;
-        padding: 5px;
+        background: $fotor-color;
+        padding: 1px;
         border: 1px;
         font-family: 'Courier New', Courier, monospace;
         font-size: small;
+        border-radius: 8px;
+        border: 3px solid green;
+    }
+    .dynamic-color {
+        background: $paragraph-color;
+        transition: 0.3s all ease-out;
+        transform: scale(1);
+    
+        &:hover {
+            background: green;
+            transform: scale(1);
+        }
     }
 }

@@ -1,4 +1,5 @@
 body .menu {
+  width: 600px;
   height: 10px;
   background-color: aqua; }
 
@@ -9,29 +10,56 @@ body .content {
 body nav {
   padding: 20px;
   border-radius: 4px;
-  margin: 5px; }
+  margin: 5px;
+  font-family: Brush Script MT;
+  font-size: x-large; }
   body nav a {
-    width: 100px;
+    width: 140px;
     display: inline-block;
     text-align: center;
     transition: 0.3s ease-out all; }
+  body nav a:hover {
+    background-color: yellow; }
+  body nav a:focus {
+    background-color: green; }
 
 body main {
-  background: orange; }
+  background: white; }
   body main h1 {
-    background: red;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large; }
+    background: greenyellow;
+    font-family: Brush Script MT;
+    font-size: xx-large; }
   body main h2 {
-    background: blue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium; }
+    background: darkseagreen;
+    font-family: Brush Script MT;
+    font-size: x-large; }
   body main p {
     background: greenyellow; }
+  body main img {
+    width: 700px;
+    height: 300px;
+    border-radius: 8px; }
+  body main form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small; }
+  body main .sectie {
+    border-radius: 8px;
+    background: lightyellow;
+    border: 3px solid green; }
 
 body footer {
   background: burlywood;
-  padding: 5px;
+  padding: 1px;
   border: 1px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: small; }
+  font-size: small;
+  border-radius: 8px;
+  border: 3px solid green; }
+
+body .dynamic-color {
+  background: greenyellow;
+  transition: 0.3s all ease-out;
+  transform: scale(1); }
+  body .dynamic-color:hover {
+    background: green;
+    transform: scale(1); }
