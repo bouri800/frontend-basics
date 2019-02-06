@@ -1,80 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Molveno Lake Resort</title>
-
-    <script type="text/javascript">
-        function reserveer()
-          {for (i=0; i < document.reserveren.kamer.length; i++)
-               {if (document.reserveren.kamer[i].checked)
-                   {waarde = document.reserveren.kamer[i].value; }
-          }
-          document.reserveren.gekozen.value = "U heeft gekozen voor een "+waarde + " kamer"; }
-       </script> 
-
+    <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js” integrity=“sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k” crossorigin=“anonymous”></script>
 </head>
+
 <body>
-    <div class="content">
-        <div style="border: 3px solid green; border-radius: 8px;">
-            <div>
-                <nav class="menu">
-                    <a href="">home</a>
-                    <a href="/about">about</a>
-                    <a href="https://www.molveno.it/lang/EN/pagine/dettaglio/info_e_dove,7/contact_us,53.html">contact</a>
-                    <a href="http://www.cnn.com">Nieuws</a>               
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+                <h5 class="my-0 mr-md-auto font-weight-normal">Molveno Lake Resort
+                <img src="images/company_logo.jpg" style="width:50px; height:50px"></h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+                  <a class="p-2 text-dark" href="#">Kamers</a>
+                  <a class="p-2 text-dark" href="#">Restaurant</a>
+                  <a class="p-2 text-dark" href="#">Evenement</a>
+                  <a class="p-2 text-dark" href="#">Contact</a>
                 </nav>
-            </div>
-            <div style="position: absolute;top: 2px; right: 750px;">
-                <img src="images/company_logo.jpg" alt="Logo" style="width: 100px; height: 50px;">
-            </div>
-        </div>
-        <main>
-            <div class="sectie">  
-                <section>
-                    <h1>Molveno Lake Resort</h1>
-                    <figure>
-                        <img src="images/molveno2.jpg" alt="Geen foto">
-                    </figure>
-                    <h2>Wilt u een kamer reserver?</h2>
-                    <p class="dynamic-color">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo consectetur 
-                        quae veritatis dignissimos quod error, enim in eum dolore magnam nostrum, sed non fugit nemo, 
-                        ad delectus nesciunt labore.
-                    </p>
-                    
-                            <FORM name="reserveren">
-                                    Maak een keuze uit de volgende type kamers: 
-                                    <BR><INPUT type="radio" name="kamer" value="Budget">Budget
-                                    <BR><INPUT type="radio" name="kamer" value="Standaard" CHECKED>Standaard
-                                    <BR><INPUT type="radio" name="kamer" value="Lux">Lux<BR>
-                                    
-                            </FORM>                       
-                            <FORM name="opties">
-                                    Maak een keuze uit de volgende opties: 
-                                    <BR><INPUT type="radio" name="optie" value="kinderbed">Kinderbed
-                                    <BR><INPUT type="radio" name="optie" value="Ontbijt" CHECKED>Ontbijt
-                                    <BR><INPUT type="radio" name="opties" value="Logies">Logies<BR>
-                            </FORM>
-                            <BR><INPUT type="button" value="Reserveer" onClick="reserveer();"><BR>
-                            <BR><INPUT type="text" name="gekozen" SIZE="50">
-                    <article>
-                            <h2>Een tafel reserveren?</h2>
-                            <p class="dynamic-color">WWF's mission is to stop the degradation of our planet's natural environment,<br>
-                            and build a future in which humans live in harmony with nature.</p>
-                        </article> 
-                </section>
-            </div>     
-        </main>
-        <footer>
-                <p>Posted by: Hafid Bourich</p>
-                <p>Contact information: <a href="mailto:hafid.bourich@kpn.com">
-            hafid.bourich@kpn.com</a>.</p>
-        </footer> 
-    </div>
+                <a class="btn btn-outline-primary" href="#">Sign up</a>
+              </div>
+              
+              <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Pricing</h1>
+                <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+              </div>
+              
+              <div class="container">
+                <div class="card-deck mb-3 text-center">
+                  <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                      <h4 class="my-0 font-weight-normal">Free</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                    </div>
+                  </div>
+                  <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                      <h4 class="my-0 font-weight-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                    </div>
+                  </div>
+                  <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                      <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                      </ul>
+                      <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                    </div>
+                  </div>
+                </div>
+              
+                <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                  <div class="row">
+                    <div class="col-12 col-md">
+                      <img class="mb-2" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                      <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Features</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Resources</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>About</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              
+
 </body>
+
 </html>
-  
